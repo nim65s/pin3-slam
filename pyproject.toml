@@ -12,6 +12,7 @@ homepage = "https://github.com/stack-of-tasks/pinocchio"
 [tool.cmeel]
 configure-args = [
     "-DBUILD_WITH_COLLISION_SUPPORT=ON",
+    "-DBUILD_WITH_CASADI_SUPPORT=ON",
     "-DBUILD_WITH_LIBPYTHON=OFF",
     "-DSUFFIX_SO_VERSION=OFF",
     ]
@@ -27,4 +28,5 @@ requires = [
     "cmeel-urdfdom",
     "cmeel-urdfdom-headers",
     "hpp-fcl",
+    "casadi",
     ]
