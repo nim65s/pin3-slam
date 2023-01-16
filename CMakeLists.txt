@@ -29,7 +29,6 @@ COMPUTE_PROJECT_ARGS(PROJECT_ARGS LANGUAGES CXX)
 PROJECT(${PROJECT_NAME} ${PROJECT_ARGS})
 
 INCLUDE(${CMAKE_CURRENT_LIST_DIR}/cmake/boost.cmake)
-INCLUDE(${CMAKE_CURRENT_LIST_DIR}/cmake/python.cmake)
 INCLUDE(${CMAKE_CURRENT_LIST_DIR}/cmake/ide.cmake)
 INCLUDE(${CMAKE_CURRENT_LIST_DIR}/cmake/apple.cmake)
 IF(APPLE) # Use the handmade approach
@@ -218,9 +217,6 @@ ADD_DEFINITIONS(-DBOOST_MPL_LIMIT_LIST_SIZE=30)
 ADD_DEFINITIONS(-DBOOST_MPL_LIMIT_VECTOR_SIZE=30)
 
 LIST(APPEND CFLAGS_DEPENDENCIES "-DBOOST_MPL_LIMIT_LIST_SIZE=30")
-
-# Path to boost headers
-INCLUDE_DIRECTORIES(SYSTEM ${Boost_INCLUDE_DIRS})
 
 # ----------------------------------------------------
 # --- INCLUDE ----------------------------------------
