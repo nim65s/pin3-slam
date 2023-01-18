@@ -1,6 +1,6 @@
 [project]
 name = "pin3-slam"
-version = "1.0"
+version = "1.6"
 description = "TEMPORARY RELEASE A fast and flexible implementation of Rigid Body Dynamics algorithms and their analytical derivatives"
 readme = "README.md"
 license= "BSD-3-Clause"
